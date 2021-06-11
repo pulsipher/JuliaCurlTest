@@ -1,4 +1,4 @@
-using Documenter
+using Documenter, InfiniteOpt, Distributions, Random, Ipopt
 
 # Make the documentation via Documenter.jl
 makedocs(;
