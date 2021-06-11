@@ -11,4 +11,4 @@ jobs:
       - uses: julia-actions/setup-julia@latest
         with:
           version: '1.6'
-      - run: julia -e "run(`curl -sI --proto =http,https,ftp,ftps https://jump.dev/JuMP.jl/v0.21.8/ --max-time 10 -o /dev/null --write-out '%{http_code} %{url_effective} %{redirect_url}'`)"
+      - run: julia -e 'run(`curl -sI --proto =http,https,ftp,ftps https://jump.dev/JuMP.jl/v0.21.8/ --max-time 10 -o /dev/null --write-out '%{http_code} %{url_effective} %{redirect_url}'`)'
