@@ -1,4 +1,4 @@
-using Documenter, Ipopt
+using Documenter, Distributions
 
 # Make the documentation via Documenter.jl
 makedocs(;
