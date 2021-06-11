@@ -1,4 +1,4 @@
-using Documenter, InfiniteOpt
+using Documenter, Ipopt
 
 # Make the documentation via Documenter.jl
 makedocs(;
