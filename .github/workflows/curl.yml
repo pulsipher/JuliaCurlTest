@@ -11,4 +11,9 @@ jobs:
       - uses: julia-actions/setup-julia@latest
         with:
           version: '1.6'
-      - run: julia curl.jl
+      - name: Pre-Ipopt Curl Call 
+        run: julia curl.jl
+      - name: Concurrent Ipopt Curl Call
+        run: julia curl-ipopt.jl
+      - name: Post-Ipopt Curl Call
+        run: julia curl.jl
