@@ -7,8 +7,10 @@ Answer: Importing [Ipopt.jl](https://github.com/jump-dev/Ipopt.jl) causes the er
 ```
 curl: /opt/hostedtoolcache/julia/1.6.1/x64/bin/../lib/julia/libcurl.so.4: no version information available (required by curl)
 ```
-when the `curl` command is invoked from Julia in the same session. This occurs because of 
-different `libcurl.so.x.x.x` versions (one already installed and one introduced by Julia):
+when the `curl` command is invoked from Julia in the same session (see the 
+[run](https://github.com/pulsipher/JuliaCurlTest/runs/2810002251?check_suite_focus=true)). 
+This occurs because of different `libcurl.so.x.x.x` versions (one already installed and one 
+introduced by Julia):
 ```
 /opt/hostedtoolcache/julia/1.6.1/x64/lib/julia/libcurl.so.4
 /opt/hostedtoolcache/julia/1.6.1/x64/lib/julia/libcurl.so.4.7.0
